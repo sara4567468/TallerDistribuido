@@ -1,1 +1,56 @@
 # TallerDistribuido
+USUARIO@LAPTOP-4B6EN9GC MINGW64 ~/TallerDistribuido (main)
+$ java -cp bin main.MainApp
+Servidor en puerto 5001 detenido.
+Servidor en puerto 5003 detenido.
+Servidor en puerto 5002 iniciado.
+? Servidores corriendo. El servidor 5002 se apagará a los 10 segundos...
+Nodo 5002 apagándose para simular caída.
+? Ejecutando cliente para enviar mensajes balanceados con retry y circuit breaker...
+?? Fallo al enviar a puerto 5002. Reintentando (1)...
+?? Fallo al enviar a puerto 5002. Reintentando (2)...
+Programa terminado.
+?? Fallo al enviar a puerto 5002. Reintentando (3)...
+?? Fallo al enviar a puerto 5002. Reintentando (4)...
+?? Fallo al enviar a puerto 5002. Reintentando (5)...
+? Falló el envío a 5002 tras 5 intentos.
+? Enviado a puerto 5003: Cliente 3 - Mensaje #1
+? Enviado a puerto 5001: Cliente 1 - Mensaje #1
+? Enviado a puerto 5001: Cliente 2 - Mensaje #2
+?? Fallo al enviar a puerto 5002. Reintentando (1)...
+?? Fallo al enviar a puerto 5002. Reintentando (2)...
+?? Fallo al enviar a puerto 5002. Reintentando (3)...
+?? Fallo al enviar a puerto 5002. Reintentando (4)...
+?? Fallo al enviar a puerto 5002. Reintentando (5)...
+? Falló el envío a 5002 tras 5 intentos.
+? Enviado a puerto 5001: Cliente 2 - Mensaje #3
+? Enviado a puerto 5003: Cliente 3 - Mensaje #2
+? Enviado a puerto 5003: Cliente 3 - Mensaje #3
+?? Fallo al enviar a puerto 5002. Reintentando (1)...
+?? Fallo al enviar a puerto 5002. Reintentando (2)...
+?? Fallo al enviar a puerto 5002. Reintentando (3)...
+?? Fallo al enviar a puerto 5002. Reintentando (4)...
+?? Fallo al enviar a puerto 5002. Reintentando (5)...
+? Falló el envío a 5002 tras 5 intentos.
+? Servidor 5002 bloqueado por 10 segundos.
+? Enviado a puerto 5001: Cliente 1 - Mensaje #3
+? Enviado a puerto 5003: Cliente 3 - Mensaje #4
+? Enviado a puerto 5003: Cliente 2 - Mensaje #5
+? Enviado a puerto 5001: Cliente 1 - Mensaje #4
+? Enviado a puerto 5001: Cliente 3 - Mensaje #5
+? Enviado a puerto 5001: Cliente 3 - Mensaje #6
+? Enviado a puerto 5003: Cliente 1 - Mensaje #5
+? Enviado a puerto 5003: Cliente 2 - Mensaje #6
+? Enviado a puerto 5001: Cliente 2 - Mensaje #7
+? Enviado a puerto 5001: Cliente 3 - Mensaje #7
+? Enviado a puerto 5003: Cliente 1 - Mensaje #6
+? Enviado a puerto 5001: Cliente 1 - Mensaje #7
+? Enviado a puerto 5003: Cliente 2 - Mensaje #8
+? Enviado a puerto 5003: Cliente 3 - Mensaje #8
+? Enviado a puerto 5001: Cliente 2 - Mensaje #9
+? Enviado a puerto 5003: Cliente 3 - Mensaje #9
+? Enviado a puerto 5001: Cliente 1 - Mensaje #8
+? Enviado a puerto 5001: Cliente 1 - Mensaje #9
+? Enviado a puerto 5003: Cliente 3 - Mensaje #10
+? Enviado a puerto 5003: Cliente 2 - Mensaje #10
+? Enviado a puerto 5001: Cliente 1 - Mensaje #10
